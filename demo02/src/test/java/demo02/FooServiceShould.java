@@ -28,9 +28,9 @@ public class FooServiceShould {
         fooService.sayHello();
 
 
-        assertThat(logCaptor.getInfoLogs().contains(expectedInfoMessage));
+        assertThat(logCaptor.getInfoLogs().contains(expectedInfoMessage)).isTrue();
 
-        assertThat(logCaptor.getWarnLogs().contains(expectedWarnMessage));
+        assertThat(logCaptor.getWarnLogs().contains(expectedWarnMessage)).isTrue();
 
     }
 
